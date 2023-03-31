@@ -8,7 +8,7 @@
 
 body {
 	background-image: url(./images/background.png);
-	background-size: contain;
+	background-size: cover;
 	display: flex;
 	height: 100vh;
 	justify-content: center;
@@ -82,13 +82,13 @@ body {
 }
 
 form {
-    margin-top: 35px;
-    gap: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 100%;
+	margin-top: 35px;
+	gap: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 100%;
 }
 
 form button {
@@ -107,11 +107,11 @@ form button[type="button"] {
 
 form button:hover {
 	transform: scale(0.97);
-}	
+}
 
 form button:active {
-	transform: scale(0.90);
-}	
+	transform: scale(0.9);
+}
 
 form button[type="submit"] {
 	background: url("./images/check-decagram.svg");
@@ -119,13 +119,36 @@ form button[type="submit"] {
 }
 
 form button[type="submit"]:hover {
-    filter: invert(53%) sepia(53%) saturate(6876%) hue-rotate(94deg) brightness(114%) contrast(93%);
+	filter: invert(53%) sepia(53%) saturate(6876%) hue-rotate(94deg)
+		brightness(114%) contrast(93%);
 }
 
 .header {
-    font-size: 1.25rem;
+	font-size: 1.25rem;
 }
 
 .header h2 {
-	color:rgb(88, 88, 88)
+	color: rgb(88, 88, 88);
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		background: red;
+	}
+
+	.weather {
+		height: 500px;
+		width: 500px;
+	}
+
+	.card {
+		width: 200px;
+		height: 200px;
+		border-radius: 15px;
+	}
+
+	.temperature {
+		padding: 35px;
+		font-size: 1.4rem;
+	}
 }
