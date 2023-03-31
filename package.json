@@ -1,0 +1,28 @@
+{
+	"name": "weatherapp",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "webpack",
+		"watch": "webpack --progress --watch",
+		"serve": "webpack-dev-server --open"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/aaaronq/weatherapp.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/aaaronq/weatherapp/issues"
+	},
+	"homepage": "https://github.com/aaaronq/weatherapp#readme",
+	"devDependencies": {
+		"webpack": "^5.77.0",
+		"webpack-cli": "^5.0.1",
+		"webpack-dev-server": "^4.13.1"
+	}
+}
