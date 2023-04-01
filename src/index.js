@@ -31,8 +31,9 @@ displayWeather("Belfast");
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
     // true for mobile device
     const searchBar = document.getElementById("searchBar");
-    searchBar.addEventListener("focus", () => {
+    searchBar.addEventListener("click", () => {
         window.scrollTo(0, 0);
+        alert("foo");
     });
 }
 
