@@ -22,7 +22,9 @@ const DOMstuff = (() => {
         condition.innerText = weatherobj.condition;
 
         updateTemp();
-        document.getElementById("searchBar").value = "";
+        const searchBar = document.getElementById("searchBar")
+        searchBar.value = "";
+        searchBar.blur();
     }
 
     function updateTemp() {
